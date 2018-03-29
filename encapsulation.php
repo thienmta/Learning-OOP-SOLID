@@ -14,5 +14,22 @@ class Student
 		$this->score = $score;
 	}
 
-	
+	function getStudent(){
+		echo "Name: ".$this->name;
+		echo "Age: ".$this->age;
+		echo "Score: ".$this->score;
+	}
+}
+
+class Child extends Student{
+	function Child($name, $age){
+		$this->name = $name;
+		$this->age = $age;
+	}
+
+	// ghi de
+	function getStudent(){
+		echo "Name: ".$this->name;
+		echo "Age: ".$this->age;
+	}
 }
