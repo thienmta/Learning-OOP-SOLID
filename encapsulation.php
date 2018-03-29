@@ -33,3 +33,6 @@ class Child extends Student{
 		echo "Age: ".$this->age;
 	}
 }
+
+$child = new Child("Nguyen Van Thien", 21);
+$child->getStudent();
