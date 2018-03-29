@@ -34,5 +34,9 @@ class Child extends Student{
 	}
 }
 
+$student = new Student("Nguyen Hoang Yen", 19);
+$student->setScore(8);
+$student->getStudent();
+
 $child = new Child("Nguyen Van Thien", 21);
 $child->getStudent();
