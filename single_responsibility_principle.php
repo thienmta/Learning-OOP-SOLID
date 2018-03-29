@@ -20,4 +20,15 @@ class getNameAge extends setNameAge{
 	}
 }
 
+class setScore extends setNameAge{
+	function setScore($score){
+		$this->score = $score;
+	}
+}
+
+class getScore extends setScore{
+	function getScore(){
+		echo "Score".$this->score;
+	}
+}
 
