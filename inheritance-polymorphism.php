@@ -43,8 +43,10 @@ abstract class Student{
 
 class MaleStudent extends Student{
 	public $gifted;
-	function MaleStudent($gifted){
-		$this->gifted = $gitted;
+	function MaleStudent($name, $age, $gifted){
+		$this->name = $name;
+		$this->age = $age;
+		$this->gifted = $gifted;
 	}
 
 	function getGifted(){
@@ -55,3 +57,9 @@ class MaleStudent extends Student{
 		echo "Gioi tinh: Nam";
 	}
 }
+
+$male = new MaleStudent("Nguyen Thien", 21, "Da bong");
+$male->setScore(8);
+$male->getStudent();
+$male->getGifted();
+$male-> getSex();
