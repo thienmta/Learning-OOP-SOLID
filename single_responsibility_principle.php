@@ -15,20 +15,26 @@ class setNameAge extends SetStudent{
 
 class getNameAge extends setNameAge{
 	function getNameAge(){
-		echo "Name".$this->name;
-		echo "Age".$this->age;
+		echo "Name: ".$this->name;
+		echo "Age: ".$this->age;
 	}
 }
 
-class setScore extends setNameAge{
+class setScore extends getNameAge{
 	function setScore($score){
 		$this->score = $score;
 	}
 }
 
 class getScore extends setScore{
-	function getScore(){
-		echo "Score".$this->score;
+	function getScoreStudent(){
+		echo "Score: ".$this->score;
 	}
 }
+
+$score = new getScore();
+$score->setScore(7);
+$score->setNameAge("Nguyen Van Thien", 22);
+$score->getNameAge();
+$score->getScoreStudent();
 
