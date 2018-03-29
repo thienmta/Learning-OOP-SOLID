@@ -1,4 +1,4 @@
 <?php
-abstract class Student{
+class Student{
 	
 }
