@@ -28,11 +28,31 @@ class Student implements Name, Sex{
 		echo "Name: ".$this->name;
 	}
 
-	function setSex($name){
+	function setSex($sex){
+		$this->sex = $sex;
+	}
+
+	function getSex($sex){
+		echo "Sex: ".$this->sex;
+	}
+}
+
+class Car implements Name, Color{
+	private $name;
+	private $color;
+	function setName($name){
 		$this->name = $name;
 	}
 
-	function getSex($name){
+	function getName($name){
 		echo "Name: ".$this->name;
+	}
+
+	function setColor($color){
+		$this->color = $color;
+	}
+
+	function getColor($color){
+		echo "Color: ".$this->color;
 	}
 }
