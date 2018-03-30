@@ -25,7 +25,7 @@ class Student implements Name, Sex{
 	}
 
 	function getName(){
-		echo "Name: ".$this->name;
+		echo "Name: ".$this->name."\n";
 	}
 
 	function setSex($sex){
@@ -33,7 +33,7 @@ class Student implements Name, Sex{
 	}
 
 	function getSex(){
-		echo "Sex: ".$this->sex;
+		echo "Sex: ".$this->sex."\n";
 	}
 }
 
@@ -45,7 +45,7 @@ class Car implements Name, Color{
 	}
 
 	function getName(){
-		echo "Name: ".$this->name;
+		echo "Name: ".$this->name."\n";
 	}
 
 	function setColor($color){
@@ -53,7 +53,7 @@ class Car implements Name, Color{
 	}
 
 	function getColor(){
-		echo "Color: ".$this->color;
+		echo "Color: ".$this->color."\n";
 	}
 }
 
@@ -66,7 +66,7 @@ class Dog implements Name, Sex, Color{
 	}
 
 	function getName(){
-		echo "Name: ".$this->name;
+		echo "Name: ".$this->name."\n";
 	}
 
 	function setColor($color){
@@ -74,7 +74,7 @@ class Dog implements Name, Sex, Color{
 	}
 
 	function getColor(){
-		echo "Color: ".$this->color;
+		echo "Color: ".$this->color."\n";
 	}
 
 	function setSex($sex){
@@ -82,7 +82,7 @@ class Dog implements Name, Sex, Color{
 	}
 
 	function getSex(){
-		echo "Sex: ".$this->sex;
+		echo "Sex: ".$this->sex."\n";
 	}
 }
 
