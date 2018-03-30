@@ -58,3 +58,9 @@ $child->setGifted("Da bong");
 $child->getStudent();
 $child->getGifted();
 $child->getSex();
+
+$sonha = new Child("Nguyen Son Ha", 22, 9);
+$sonha->setGifted("Hat");
+$sonha->getStudent();
+$sonha->getGifted();
+$sonha->getSex();
