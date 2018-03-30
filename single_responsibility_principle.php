@@ -2,12 +2,12 @@
 class Student
 {
 	protected $name;
-	protected $age;
+	protected $year_of_birth;
 	protected $score;
 
-	function Student($name, $age, $score) {
+	function Student($name, $year_of_birth, $score) {
 		$this->name = $name;
-		$this->age = $age;
+		$this->year_of_birth = $year_of_birth;
 		if(0 <= $score && $score <= 10) {
 			$this->score = $score;
 		}
@@ -20,25 +20,33 @@ class Student
 class SayStudent extends Student {
 	function showStudent(){
 		echo "Name: ".$this->name."\n";
-		echo "Age: ".$this->age."\n";
+		echo "Year of birth: ".$this->year_of_birth."\n";
 
-		$checkScore = $this->score;
+		$score = $this->score;
 
-		if($checkScore >=0 && $checkScore<4){
+		if($score >=0 && $score<4){
 			echo "Hoc luc: Yeu \n";
 		}
-		elseif($checkScore >=4 && $checkScore<7){
+		elseif($score >=4 && $score<7){
 			echo "Hoc luc: Trung binh\n";
 		}
-		elseif($checkScore >=7 && $checkScore<9){
+		elseif($score >=7 && $score<9){
 			echo "Hoc luc: Kha\n";
 		}
-		elseif($checkScore >=9 && $checkScore<=10){
+		elseif($score >=9 && $score<=10){
 			echo "Hoc luc: Gioi\n";
 		}
 	}
 
 }
 
-$myStudent = new SayStudent("Nguyen Van Thien", 21, 7);
+class SayAgeStudent extends SayStudent{
+	function showAgeStudent() {
+		$age = 2018 - $this->year_of_birth;
+		echo "Age: " . $age;
+	}
+}
+
+$myStudent = new SayAgeStudent("Nguyen Van Thien", 1996, 7);
 $myStudent->showStudent();
+$myStudent->showAgeStudent();
