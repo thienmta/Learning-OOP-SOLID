@@ -1,6 +1,6 @@
 <?php
 class Person{
-	public $name;
+	private $name;
 
 	function Person($name){
 		$this->name = $name;
@@ -17,7 +17,7 @@ class Student extends Person{
 		$this->age = $age;
 	}
 
-	function getStudent(){
+	function getAgeStudent(){
 		echo "Age: ".$this->age;
 	}
 }
@@ -28,7 +28,7 @@ class Child extends Person{
 		$this->sex = $sex;
 	}
 
-	function getStudent(){
+	function getSexChild(){
 		echo "Sex: ".$this->sex;
 	}
 }
@@ -36,9 +36,9 @@ class Child extends Person{
 $student = new Student(21);
 $student->Person("Nguyen Van Thien");
 $student->getNamePerson();
-$student->getStudent();
+$student->getAgeStudent();
 
 $child = new Child("Nam");
 $child->Person("Nguyen Son Ha");
 $child->getNamePerson();
-$child->getStudent();
+$child->getSexChild();
