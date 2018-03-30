@@ -81,7 +81,7 @@ class Dog implements Name, Sex, Color{
 		$this->sex = $sex;
 	}
 
-	function getColor(){
+	function getSex(){
 		echo "Sex: ".$this->sex;
 	}
 }
@@ -89,14 +89,14 @@ class Dog implements Name, Sex, Color{
 $student = new Student();
 $student->setName("Nguyen Van Thien");
 $student->setSex("Nam");
-$tudent->getName();
+$student->getName();
 $student->getSex();
 
 $car = new Car();
 $car->setName("BMV");
 $car->setColor("Black");
-$tudent->getName();
-$student->getColor();
+$car->getName();
+$car->getColor();
 
 $dog = new Dog();
 $dog->setName("Mick");
@@ -104,4 +104,4 @@ $dog->setColor("Black");
 $dog->setSex("Nam");
 $dog->getName();
 $dog->getSex();
-$student->getColor();
+$dog->getColor();
