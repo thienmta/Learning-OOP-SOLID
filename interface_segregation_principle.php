@@ -85,3 +85,23 @@ class Dog implements Name, Sex, Color{
 		echo "Sex: ".$this->sex;
 	}
 }
+
+$student = new Student();
+$student->setName("Nguyen Van Thien");
+$student->setSex("Nam");
+$tudent->getName();
+$student->getSex();
+
+$car = new Car();
+$car->setName("BMV");
+$car->setColor("Black");
+$tudent->getName();
+$student->getColor();
+
+$dog = new Dog();
+$dog->setName("Mick");
+$dog->setColor("Black");
+$dog->setSex("Nam");
+$dog->getName();
+$dog->getSex();
+$student->getColor();
