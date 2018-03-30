@@ -24,7 +24,7 @@ class Student extends Person{
 
 class Child extends Person{
 	private $sex;
-	function Student($sex){
+	function Child($sex){
 		$this->sex = $sex;
 	}
 
@@ -32,3 +32,13 @@ class Child extends Person{
 		echo "Sex: ".$this->sex;
 	}
 }
+
+$student = new Student(21);
+$student->Person("Nguyen Van Thien");
+$student->getNamePerson();
+$student->getStudent();
+
+$child = new Child("Nam");
+$child->Person("Nguyen Son Ha");
+$child->getNamePerson();
+$child->getStudent();
